@@ -3,6 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Wykonywane ćwiczenia</title>
+<style>
+table, td, th {
+  border: 1px solid black;
+}
+#table1 {
+  border-collapse: collapse;
+}
+
+
+</style>
 </head>
 <body>
 <h>Nagłówek artykułu</h>
@@ -11,9 +21,9 @@
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper et tortor nec fringilla. Curabitur et tincidunt nulla. Etiam et purus et velit facilisis imperdiet eu congue sapien. In eu felis elit. Nunc ligula dolor, imperdiet vitae magna tincidunt, egestas venenatis velit. Nullam dapibus viverra metus, eu eleifend est efficitur consectetur. Praesent mattis magna id augue varius, aliquet imperdiet augue rutrum. Mauris commodo erat eu magna convallis tempus. Sed luctus nec sem ac eleifend. Aliquam erat volutpat. Cras interdum enim in justo vulputate condimentum.</p>
 <p>Nunc placerat massa et pellentesque luctus. Aenean efficitur suscipit velit, eget volutpat diam pretium vel. Pellentesque auctor leo libero, id accumsan leo aliquam sit amet. Maecenas egestas lacus ac mi blandit, vel tincidunt massa lobortis. Duis fringilla elit at rutrum cursus. Vestibulum suscipit tincidunt vestibulum. Duis lacinia semper sapien, eget lobortis quam. Praesent efficitur leo non sem eleifend, nec blandit ligula tempor.</p>
 <p>Vivamus fermentum auctor sapien, nec ultrices lorem suscipit nec. Quisque magna sapien, porta at mi at, feugiat ornare nisl. Proin pretium velit eget lacus sagittis, eget vehicula augue lobortis. Maecenas vitae viverra sapien. Nunc porta scelerisque magna vestibulum dictum. Morbi dignissim at tellus luctus faucibus. Donec eleifend tortor a ex convallis vehicula. Phasellus in mauris at arcu scelerisque pulvinar. Vivamus rhoncus blandit molestie. Vestibulum sed felis eu urna sodales pulvinar vel suscipit velit. Curabitur ac rhoncus ante. Nullam in massa semper, pellentesque sem sit amet, pharetra neque. Nullam varius, purus quis bibendum tempus, metus dui ultrices justo, a condimentum mauris ligula gravida odio. Suspendisse vestibulum cursus mauris, vel tempor arcu cursus non. Praesent ac est et risus vehicula vehicula facilisis nec sem.</p>
-<img src="ryba.jpg" alt="ryba">
+<img src="images/ryba.jpg" alt="ryba">
 
-<table>
+<table id="table1">
     <tr>
         <th>Nr.</th>
         <th>Nazwa produktu</th>
@@ -21,37 +31,48 @@
         <th>Ilosc sztuk</th>
     </tr>
     <tr>
-        <th>1</th>
-        <th>Gumy Kulki</th>
-        <th>0,20zł</th>
-        <th>100</th>
+        <td>1</td>
+        <td>Gumy Kulki</td>
+        <td>0,20zł</td>
+        <td>100</td>
     </tr>
     <tr>
-        <th>2</th>
-        <th>Batonik Price Polo</th>
-        <th>2zł</th>
-        <th>20</th>
+        <td>2</td>
+        <td>Batonik Prince Polo</td>
+        <td>2zł</td>
+        <td>20</td>
     </tr>
     <tr>
-        <th>3</th>
-        <th>Czpisy Lays</th>
-        <th>4zł</th>
-        <th>10</th>
+        <td>3</td>
+        <td>Chipsy Lays</td>
+        <td>4zł</td>
+        <td>10</td>
     </tr>
     <tr>
-        <th>4</th>
-        <th>Lody Koral</th>
-        <th>2zł</th>
-        <th>10</th>
+        <td>4</td>
+        <td>Lody Koral</td>
+        <td>2zł</td>
+        <td>10</td>
     </tr>
     <tr>
-        <th>5</th>
-        <th>Ciastka Oreo</th>
-        <th>4zł</th>
-        <th>13</th>
+        <td>5</td>
+        <td>Ciastka Oreo</td>
+        <td>4zł</td>
+        <td>13</td>
     </tr>
 
 
 </table>
+<div style="display: flex; flex-wrap: wrap; width: 220px;">
+    <div style="height: 100px; width: 100px; background-color: red;"></div>
+    <div style="height: 100px; width: 100px; background-color: plum;"></div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; width: 310px;">
+<div style="height: 100px; width: 100px; background-color: greenyellow;"></div>
+    <div style="height: 100px; width: 100px; background-color: aquamarine;  background-image: url('images/czub.jpg'); background-size: cover; background-position: center;"></div>
+    <div style="height: 100px; width: 100px; background-color: slateblue;"></div>
+</div>
+
 </body>
 </html>
