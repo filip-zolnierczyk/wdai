@@ -1,0 +1,188 @@
+
+/* #b01345,  #785869, #fdb04d, #d6254b, #0a0d2c */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Amiri", serif;
+    font-weight: 400;
+}
+
+.top {
+    width: 100%;
+    position: fixed;
+}
+
+.navbar {
+    background-color: #fdb04d;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.navbar_container {
+    display: flex;
+    justify-content: space-between;
+    height: 77px;
+    z-index: 1;
+    width: 100%;
+    max-width: 3840px;
+    margin: 0 auto;
+    padding: 0 50px;
+    background-color: #b01345;
+    z-index: 999;
+}
+
+#logo {
+    padding-top: 10px;
+}
+
+
+
+.navbar_menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar_item {
+    height: 80px;
+}
+
+.navbar_link {
+    color: #fdb04d;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 25px;
+    height: 100%;
+    font-size: larger;
+
+}
+
+.o_nas {
+    background-image: url('imgaes/tlo.webp');
+    background-size: cover;
+    background-position: center; 
+    height: 100vh; 
+    width: 100%;
+    z-index: 1;
+}
+
+.overlay_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 10px 40px;
+    border-radius: 8px; 
+    color: white;
+    text-align: center;
+    max-width: 80%; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 3px solid #fdb04d;
+}
+
+.overlay_text p {
+    margin: 0; 
+    font-size: 1.5rem; 
+}
+
+.produkty {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    gap: 20px; 
+    padding: 20px;
+    background-color: #785869; 
+}
+
+.produkty2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    gap: 20px; 
+    padding: 20px;
+    background-color: #785869; 
+}
+
+.produkt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: #0a0d2c; 
+    padding: 15px;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-color: #fdb04d;
+    border-width: 3px;
+}
+
+
+.produkt-tekst {
+    flex: 1; 
+    padding-right: 20px; 
+    color: #fdb04d;
+}
+
+.produkt-tekst h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.produkt-tekst p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+.produkt-obrazek {
+    flex-shrink: 0; 
+}
+
+.section_bar {
+    justify-content: center;
+    background-color: #b01345;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    color:#fdb04d;
+    font-size: 40px;
+    text-align: center;
+    border-top: 3px solid #fdb04d;
+    border-bottom: 3px solid #fdb04d;
+}
+
+.img_gal {
+    background-image: url('imgaes/tlo2.webp');
+    background-size: cover;
+    background-position: center; 
+    height: 100vh; 
+    width: 100%;
+    z-index: 1;
+}
+
+.photos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%; 
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto
+}
+
+.photos img {
+    flex-basis: calc(25% - 20px);
+    width: 250px;
+    height: auto;
+    margin-top: 100px;
+    flex-shrink: 0;
+    border: 3px solid #fdb04d;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
