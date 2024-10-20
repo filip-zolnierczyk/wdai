@@ -83,7 +83,7 @@
     border-radius: 8px; 
     color: white;
     text-align: center;
-    max-width: 80%; 
+    max-width: 80%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border: 3px solid #fdb04d;
     z-index: 0;
@@ -171,15 +171,16 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
     width: 100%; 
-    padding: 10px;
+    padding: 20px;
     max-width: 1000px;
     margin: 0 auto
 }
 
 .photos img {
-    width: 220px;
+    flex-basis: calc(25% - 20px);
+    width: 250px;
     height: auto;
     margin-top: 100px;
     flex-shrink: 0;
@@ -219,7 +220,7 @@
     flex-shrink: 0;
     border: 3px solid #fdb04d;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9); 
     padding: 10px;
     background-color: #62000F;
 }
@@ -249,12 +250,22 @@ label {
 
 input[type="text"],
 input[type="email"],
+select,
 textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
+}
+
+select {
+    appearance: none;
+    background-color: white;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray" viewBox="0 0 16 16"><path d="M3 5h10L8 10 3 5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center; 
+    padding-right: 30px;
 }
 
 button {
@@ -332,4 +343,54 @@ footer {
     .social-icons {
         justify-content: center;
     }
+
+    .overlay_text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        background-color: rgba(0, 0, 0, 0.7); 
+        padding: 5px 20px;
+        border-radius: 8px; 
+        color: white;
+        text-align: center;
+        max-width: 90%; 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        border: 3px solid #fdb04d;
+        width: 80%;
+    }
+
+    .img_gal {
+        background-image: url('imgaes/tlo2.png');
+        background-size: cover;
+        background-position: center; 
+        height: 400vh; 
+        width: 100%;
+        z-index: 1;
+    }
+
+    .photos {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 100%; 
+        padding: 20px;
+        max-width: 1000px;
+        margin: 0 auto
+    }
+    
+    .photos img {
+        flex-basis: calc(25% - 20px);
+        width: 400px;
+        height: auto;
+        margin-top: 100px;
+        flex-shrink: 0;
+        border: 3px solid #fdb04d;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 1); 
+    }
+    
+
+
 }
