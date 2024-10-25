@@ -1,1 +1,2 @@
 "# wdai" 
+symboliczna zmiana
