@@ -166,7 +166,7 @@ body {
     background-image: url('imgaes/tlo2.png');
     background-size: cover;
     background-position: center; 
-    height: 180vh; 
+    height: 200vh; 
     width: 100%;
     z-index: 1;
 }
@@ -386,7 +386,7 @@ footer {
         background-image: url('imgaes/tlo2.png');
         background-size: cover;
         background-position: center; 
-        height: 450vh; 
+        height: 500vh; 
         width: 100%;
         z-index: 1;
     }
