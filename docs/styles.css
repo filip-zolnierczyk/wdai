@@ -190,7 +190,12 @@ body {
     flex-shrink: 0;
     border: 3px solid #fdb04d;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.photos img:hover{
+    transform: scale(1.2);
 }
 
 .film{
@@ -350,7 +355,7 @@ footer {
     height: 50px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 870px) {
     .footer-container {
         flex-direction: column;
         align-items: center;
