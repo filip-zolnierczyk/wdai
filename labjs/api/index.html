@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Produktów</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Lista Produktów</h1>
+
+    <div class="controls">
+        <input type="text" id="filterInput" placeholder="Wpisz frazę do filtrowania..." oninput="filterData()">
+        <select id="sortSelect" onchange="sortData()">
+            <option value="original">Oryginalna kolejność</option>
+            <option value="asc">Sortuj rosnąco</option>
+            <option value="desc">Sortuj malejąco</option>
+        </select>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Zdjęcie</th>
+                <th>Tytuł</th>
+                <th>Opis</th>
+            </tr>
+        </thead>
+        <tbody id="productTableBody">
+            <!-- Wiersze tabeli zostaną wygenerowane przez JavaScript -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
