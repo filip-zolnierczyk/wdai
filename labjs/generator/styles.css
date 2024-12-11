@@ -74,7 +74,7 @@ input, select {
     border: 1px solid #ddd;
     border-radius: 5px;
     margin: 10px 0;
-    width: calc(100% - 22px); /* Zapewnia dopasowanie do szerokości kontenera */
+    width: calc(100% - 22px); 
 }
 
 table {
