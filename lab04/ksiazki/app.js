@@ -1,16 +1,14 @@
-// Importy
+
 const express = require('express');
-const { Book } = require('./models'); // Import modelu Book
+const { Book } = require('./models'); 
 
 const app = express();
 const port = 3000;
 
-// Middleware dla parsowania JSON
+
 app.use(express.json());
 
-// Trasy
 
-// Pobranie wszystkich książek
 app.get('/api/books', async (req, res) => {
     try {
         const books = await Book.findAll();
@@ -21,7 +19,6 @@ app.get('/api/books', async (req, res) => {
     }
 });
 
-// Pobranie jednej konkretnej książki na podstawie ID
 app.get('/api/books/:id', async (req, res) => {
     const { id } = req.params;
     try {
@@ -37,11 +34,10 @@ app.get('/api/books/:id', async (req, res) => {
     }
 });
 
-// Dodanie nowej książki
 app.post('/api/books', async (req, res) => {
-    const { title, author, year } = req.body; // Zmieniono nazwy pól
+    const { title, author, year } = req.body; 
     try {
-        const newBook = await Book.create({ title, author, year }); // Zmieniono nazwy pól
+        const newBook = await Book.create({ title, author, year }); 
         res.status(201).json({ id: newBook.id });
     } catch (error) {
         console.error('Błąd przy dodawaniu książki:', error);
@@ -49,7 +45,6 @@ app.post('/api/books', async (req, res) => {
     }
 });
 
-// Usunięcie książki na podstawie ID
 app.delete('/api/books/:id', async (req, res) => {
     const { id } = req.params;
     try {
@@ -65,7 +60,6 @@ app.delete('/api/books/:id', async (req, res) => {
     }
 });
 
-// Uruchomienie serwera
 app.listen(port, () => {
     console.log(`Serwer działa na http://localhost:${port}`);
 });
